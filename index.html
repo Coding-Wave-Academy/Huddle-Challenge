@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        body {
+            background-image: url(./images/bg-desktop.svg);
+            background-repeat: no-repeat;
+            background-color: hsl(257, 40%, 49%);
+            box-sizing: border-box;
+        }
+        
+        .container {
+            padding: 40px 30px;
+            margin: 0 auto;
+        }
+        
+        .wrapper {
+            padding: 70px 30px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        
+        .logo img {
+            width: 190px;
+        }
+        
+        .left-col img {
+            width: 640px;
+        }
+        
+        .right-col {
+            color: #fff;
+            padding: 30px;
+            width: 40%;
+        }
+        
+        .right-col h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .right-col p {
+            font-weight: 400;
+            text-align: left;
+            font-family: 'OpenSans', sans-serif;
+        }
+        
+        .reg-btn {
+            margin-top: 20px;
+            float: left;
+            border: none;
+            width: 200px;
+            color: hsl(300, 69%, 71%);
+            background: #fff;
+            font-weight: 400;
+            font-size: 1.2em;
+            padding: 15px;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: all .5s ease 0ms;
+        }
+        
+        .reg-btn:hover {
+            transition: all .5s ease 0ms;
+            color: #fff;
+            background-color: hsl(300, 69%, 71%);
+        }
+        
+        .social-icon {
+            display: flex;
+            float: right;
+        }
+        
+        .social {
+            width: 70px;
+            height: 40px;
+            margin-right: 5px;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .social:hover {
+            transition: all .5s ease 0ms;
+            color: hsl(300, 69%, 71%);
+        }
+        
+        @media (max-width:450px) {
+            .container {
+                padding: 35px;
+            }
+            .wrapper {
+                display: block;
+                text-align: center;
+                padding: 10px;
+                margin: 0;
+            }
+            .left-col img {
+                width: 300px;
+                margin-bottom: 40px;
+            }
+            .logo img {
+                width: 140px;
+                margin-bottom: 40px;
+            }
+            .right-col {
+                justify-content: center;
+                overflow: hidden;
+                width: 100%;
+                margin-left: 5px;
+                text-align: center;
+                padding: 0;
+            }
+            .right-col h1 {
+                font-size: 21px;
+            }
+            .right-col p {
+                font-size: 14px;
+                padding: 5px;
+                text-align: center;
+            }
+            .reg-btn {
+                text-align: center;
+                color: hsl(257, 40%, 49%);
+                float: none;
+            }
+            .social-icon {
+                display: inline-block;
+                margin-right: 85px;
+                margin-top: 40px;
+                justify-content: center;
+            }
+            .social {
+                width: 20px;
+                height: 30px;
+                padding: 5px;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="left-col">
+                <img src="./images/illustration-mockups.svg" alt="">
+            </div>
+            <div class="right-col">
+                <h1>
+                    Build The Community Your Fans Will Love
+                </h1>
+                <p> Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+                <button class="reg-btn"> Register</button>
+
+            </div>
+        </div>
+        <div class="social-icon">
+            <ion-icon class="social" name="logo-facebook"></ion-icon>
+            <ion-icon class="social" name="logo-twitter"></ion-icon>
+            <ion-icon class="social" name="logo-instagram"></ion-icon>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/NexusAcademy101">Ribert Kandi Junior</a>.
+        </p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+</body>
+
+</html>
